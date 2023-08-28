@@ -1,0 +1,24 @@
+<customlist scriptid="customlist541">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Rental Billing Type</name>
+  <customvalues>
+    <customvalue scriptid="val_412790_t2359357_999">
+      <isinactive>F</isinactive>
+      <value>Standard</value>
+    </customvalue>
+    <customvalue scriptid="val_412791_t2359357_484">
+      <isinactive>F</isinactive>
+      <value>Usage</value>
+    </customvalue>
+    <customvalue scriptid="val_412792_t2359357_343">
+      <isinactive>F</isinactive>
+      <value>Volume</value>
+    </customvalue>
+    <customvalue scriptid="val_412793_t2359357_815">
+      <isinactive>F</isinactive>
+      <value>Tiered</value>
+    </customvalue>
+  </customvalues>
+</customlist>

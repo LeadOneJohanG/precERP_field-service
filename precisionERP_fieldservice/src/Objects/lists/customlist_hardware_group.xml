@@ -1,0 +1,24 @@
+<customlist scriptid="customlist_hardware_group">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Hardware Group</name>
+  <customvalues>
+    <customvalue scriptid="value_1_t573085_832">
+      <isinactive>F</isinactive>
+      <value>1</value>
+    </customvalue>
+    <customvalue scriptid="value_2_t573085_832">
+      <isinactive>F</isinactive>
+      <value>2</value>
+    </customvalue>
+    <customvalue scriptid="value_3_t573085_832">
+      <isinactive>F</isinactive>
+      <value>3</value>
+    </customvalue>
+    <customvalue scriptid="val_113309_t1697389_485">
+      <isinactive>F</isinactive>
+      <value>SURVEY</value>
+    </customvalue>
+  </customvalues>
+</customlist>

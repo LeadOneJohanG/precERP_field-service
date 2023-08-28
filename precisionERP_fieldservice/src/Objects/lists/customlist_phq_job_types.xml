@@ -1,0 +1,20 @@
+<customlist scriptid="customlist_phq_job_types">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Job Types</name>
+  <customvalues>
+    <customvalue scriptid="val_76042_t1697389_781">
+      <isinactive>F</isinactive>
+      <value>Bench Service</value>
+    </customvalue>
+    <customvalue scriptid="val_76043_t1697389_759">
+      <isinactive>F</isinactive>
+      <value>Field Service</value>
+    </customvalue>
+    <customvalue scriptid="val_76044_t1697389_310">
+      <isinactive>F</isinactive>
+      <value>Installation</value>
+    </customvalue>
+  </customvalues>
+</customlist>

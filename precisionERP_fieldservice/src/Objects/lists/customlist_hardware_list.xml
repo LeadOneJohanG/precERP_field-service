@@ -1,0 +1,28 @@
+<customlist scriptid="customlist_hardware_list">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Hardware List</name>
+  <customvalues>
+    <customvalue scriptid="value_1_t573085_832">
+      <isinactive>F</isinactive>
+      <value>AG 372</value>
+    </customvalue>
+    <customvalue scriptid="value_2_t573085_832">
+      <isinactive>F</isinactive>
+      <value>AG 432/442</value>
+    </customvalue>
+    <customvalue scriptid="value_3_t573085_832">
+      <isinactive>F</isinactive>
+      <value>AG 262</value>
+    </customvalue>
+    <customvalue scriptid="value_4_t573085_832">
+      <isinactive>F</isinactive>
+      <value>FMX/FM1000</value>
+    </customvalue>
+    <customvalue scriptid="value_5_t573085_832">
+      <isinactive>F</isinactive>
+      <value>CFX/FM750</value>
+    </customvalue>
+  </customvalues>
+</customlist>

@@ -1,0 +1,152 @@
+<?xml version="1.0"?><!DOCTYPE pdf PUBLIC "-//big.faceless.org//report" "report-1.1.dtd">
+<pdf>
+<head>
+	<link name="NotoSans" type="font" subtype="truetype" src="${nsfont.NotoSans_Regular}" src-bold="${nsfont.NotoSans_Bold}" src-italic="${nsfont.NotoSans_Italic}" src-bolditalic="${nsfont.NotoSans_BoldItalic}" bytes="2" />
+	<#if .locale == "zh_CN">
+		<link name="NotoSansCJKsc" type="font" subtype="opentype" src="${nsfont.NotoSansCJKsc_Regular}" src-bold="${nsfont.NotoSansCJKsc_Bold}" bytes="2" />
+	<#elseif .locale == "zh_TW">
+		<link name="NotoSansCJKtc" type="font" subtype="opentype" src="${nsfont.NotoSansCJKtc_Regular}" src-bold="${nsfont.NotoSansCJKtc_Bold}" bytes="2" />
+	<#elseif .locale == "ja_JP">
+		<link name="NotoSansCJKjp" type="font" subtype="opentype" src="${nsfont.NotoSansCJKjp_Regular}" src-bold="${nsfont.NotoSansCJKjp_Bold}" bytes="2" />
+	<#elseif .locale == "ko_KR">
+		<link name="NotoSansCJKkr" type="font" subtype="opentype" src="${nsfont.NotoSansCJKkr_Regular}" src-bold="${nsfont.NotoSansCJKkr_Bold}" bytes="2" />
+	<#elseif .locale == "th_TH">
+		<link name="NotoSansThai" type="font" subtype="opentype" src="${nsfont.NotoSansThai_Regular}" src-bold="${nsfont.NotoSansThai_Bold}" bytes="2" />
+	</#if>
+    <style type="text/css">
+        table {
+            font-size: 9pt;
+        }
+        th {
+            font-weight: bold;
+            font-size: 8pt;
+            vertical-align: middle;
+            padding: 5px 6px 3px;
+            background-color: #e3e3e3;
+            color: #333333;
+        }
+        b {
+            font-weight: bold;
+            color: #333333;
+        }
+        table.header td {
+            padding: 0;
+            font-size: 10pt;
+        }
+        table.footer td {
+            padding: 0;
+            font-size: 8pt;
+        }
+        td.addressheader {
+            font-size: 8pt;
+            font-weight: bold;
+            margin-top: 0.5em;
+            margin-bottom: 0.0em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        td.address {
+            padding-top: 0;
+        }
+        span.title {
+            font-size: 28pt;
+        }
+        span.number {
+            font-size: 16pt;
+        }
+        span.itemname {
+            font-weight: bold;
+            line-height: 150%;
+        }
+        hr {
+            border-top: 1px dashed #d3d3d3;
+            width: 100%;
+            color: #ffffff;
+            background-color: #ffffff;
+            height: 1px;
+        }
+        .border-up-down {
+            border-top: solid 2px;
+            border-bottom: solid 2px;
+            border-color: #666666;
+        }
+
+        .border-down {
+            border-bottom: solid 1px;
+            border-color: #666666;
+        }
+</style>
+</head>
+<body padding="0.5in 0.5in 0.5in 0.5in" size="Letter">
+    <table class="border-up-down" style="width: 100%; margin-top: 10px;">
+        <tr>
+            <td class="addressheader">
+                <h2>Name: &nbsp; ${record.name}</h2>
+            </td>
+            <td class="addressheader">
+                <span>Date Created: &nbsp; ${record.created}</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="address">
+                <h2>Rental Reservation: &nbsp; ${record.custrecord_phq_eqr_pickup_reservation}</h2>
+            </td>
+            <td class="address">
+                <h2>Customer: &nbsp; ${record.custrecord_phq_eqr_pickup_customer}</h2>
+            </td>
+        </tr>
+    </table>
+    <table class="border-down" style="width: 100%; margin-top: 20px;">
+        <tr>
+            <td class="addressheader">
+                <h2>Delivery Name: &nbsp; ${record.custrecord_precerp_delivery_num_pickup}</h2>
+            </td>
+            <td class="addressheader">
+                <h2>Status:  &nbsp; ${record.custrecord_precerp_delivery_stat_pickup}</h2>
+            </td>
+        </tr>
+        <tr>
+            <td class="address">
+                <h2>Delivery Date: &nbsp; ${record.custrecord_precerp_delivery_date_pickup}</h2>
+            </td>
+            <td> &nbsp; </td>
+        </tr>
+        <tr>
+            <td> &nbsp; </td>
+        </tr>
+        <tr>
+            <td> &nbsp; </td>
+            <td class="address">
+                <h2>${record.custrecord_precerp_delivery_deloc_pickup}</h2>
+            </td>
+        </tr>
+    </table>
+    <#if record.recmachcustrecord_phq_eqr_returnline_pickup?has_content >
+        <table style="width: 100%; margin-top: 20px;">
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Serial</th>
+                <th>Out On Rent Location</th>
+                <th>Return Location</th>
+            </tr>
+            <#list record.recmachcustrecord_phq_eqr_returnline_pickup as line>
+                <tr>
+                    <td>${line.custrecord_phq_eqr_returnline_item}</td>
+                    <td>${line.custrecord_phq_eqr_returnline_qty}</td>
+                    <td>${line.custrecord_phq_eqr_returnline_serial}</td>
+                    <td>${line.custrecord_phq_eqr_returnline_location}</td>
+                    <td></td>
+                </tr>
+            </#list>
+        </table>
+    </#if>
+    <table>
+        <tr style="width: 100%">
+            <td style="padding-left: 225px;">
+                <barcode codetype="code128" showtext="true" height="50" width="200" value="${record.name}" />
+            </td>
+        </tr>
+    </table>
+</body>
+</pdf>

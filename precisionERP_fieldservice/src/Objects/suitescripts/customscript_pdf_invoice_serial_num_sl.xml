@@ -1,0 +1,25 @@
+<suitelet scriptid="customscript_pdf_invoice_serial_num_sl">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>PDF Invoice Serial Number SL</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteBundles/Bundle 458535/pdf_invoice_serial_number_sl.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_pdf_invoice_serial_num_sl">
+      <allemployees>T</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>DEBUG</loglevel>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>RELEASED</status>
+      <title>PDF Invoice Serial Number SL</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

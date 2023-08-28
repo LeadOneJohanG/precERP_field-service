@@ -1,0 +1,48 @@
+<customlist scriptid="customlist_assettypes">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Asset Types</name>
+  <customvalues>
+    <customvalue scriptid="value_1_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Xyboard Tablet</value>
+    </customvalue>
+    <customvalue scriptid="value_2_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Dell D-Series Laptop</value>
+    </customvalue>
+    <customvalue scriptid="value_3_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Droid Pro</value>
+    </customvalue>
+    <customvalue scriptid="value_4_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Droid Bionic</value>
+    </customvalue>
+    <customvalue scriptid="value_5_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Dell E-Series Laptop</value>
+    </customvalue>
+    <customvalue scriptid="value_6_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Projector</value>
+    </customvalue>
+    <customvalue scriptid="value_7_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Teletronics AMP</value>
+    </customvalue>
+    <customvalue scriptid="value_8_t573085_832">
+      <isinactive>F</isinactive>
+      <value>AimTrac Network</value>
+    </customvalue>
+    <customvalue scriptid="value_9_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Razr M</value>
+    </customvalue>
+    <customvalue scriptid="value_10_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Razr</value>
+    </customvalue>
+  </customvalues>
+</customlist>

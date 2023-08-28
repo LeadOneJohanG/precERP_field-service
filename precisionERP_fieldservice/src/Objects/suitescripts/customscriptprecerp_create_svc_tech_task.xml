@@ -1,0 +1,32 @@
+<scheduledscript scriptid="customscriptprecerp_create_svc_tech_task">
+  <description>Scheduled script to create weekly service technician task records.  This reads the list of service technicians from saved search, customsearch_precerp_svc_tech_tasks_wf.</description>
+  <isinactive>F</isinactive>
+  <name>precerp_create_svc_tech_tasks_SCH</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteBundles/Bundle 458535/precerp_create_svc_tech_tasks_SCH.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy1">
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>TESTING</status>
+      <title>precerp_create_svc_tech_tasks_SCH</title>
+      <recurrence>
+        <weekly>
+          <everyxweeks>1</everyxweeks>
+          <friday>F</friday>
+          <monday>T</monday>
+          <repeat></repeat>
+          <saturday>F</saturday>
+          <startdate>2020-11-09</startdate>
+          <starttime>12:00:00Z</starttime>
+          <sunday>F</sunday>
+          <thursday>F</thursday>
+          <tuesday>F</tuesday>
+          <wednesday>F</wednesday>
+        </weekly>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</scheduledscript>

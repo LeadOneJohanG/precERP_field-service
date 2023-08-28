@@ -1,0 +1,36 @@
+<customlist scriptid="customlist_phq_subman_status">
+  <description>List of subscription statuses</description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Subscription Status</name>
+  <customvalues>
+    <customvalue scriptid="val_59396_t573085_218">
+      <isinactive>F</isinactive>
+      <value>Pending</value>
+    </customvalue>
+    <customvalue scriptid="val_59397_t573085_938">
+      <isinactive>F</isinactive>
+      <value>Active</value>
+    </customvalue>
+    <customvalue scriptid="val_59398_t573085_270">
+      <isinactive>F</isinactive>
+      <value>Cancelled</value>
+    </customvalue>
+    <customvalue scriptid="val_59399_t573085_228">
+      <isinactive>F</isinactive>
+      <value>Renewed</value>
+    </customvalue>
+    <customvalue scriptid="val_59651_t573085_964">
+      <isinactive>F</isinactive>
+      <value>Renewal Pending</value>
+    </customvalue>
+    <customvalue scriptid="val_59652_t573085_472">
+      <isinactive>F</isinactive>
+      <value>Error</value>
+    </customvalue>
+    <customvalue scriptid="val_61123_2227241_185">
+      <isinactive>F</isinactive>
+      <value>Expire</value>
+    </customvalue>
+  </customvalues>
+</customlist>

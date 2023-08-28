@@ -1,0 +1,36 @@
+<customlist scriptid="customlist_base_station_model">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Base Station Model</name>
+  <customvalues>
+    <customvalue scriptid="value_1_t573085_832">
+      <isinactive>F</isinactive>
+      <value>RTK 900/542</value>
+    </customvalue>
+    <customvalue scriptid="value_2_t573085_832">
+      <isinactive>F</isinactive>
+      <value>AG542</value>
+    </customvalue>
+    <customvalue scriptid="value_3_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Zephyr</value>
+    </customvalue>
+    <customvalue scriptid="value_4_t573085_832">
+      <isinactive>F</isinactive>
+      <value>SNB900</value>
+    </customvalue>
+    <customvalue scriptid="value_5_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Sitenet</value>
+    </customvalue>
+    <customvalue scriptid="value_6_t573085_832">
+      <isinactive>F</isinactive>
+      <value>MS750</value>
+    </customvalue>
+    <customvalue scriptid="value_7_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Top-Con</value>
+    </customvalue>
+  </customvalues>
+</customlist>

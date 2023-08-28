@@ -1,0 +1,56 @@
+<customlist scriptid="customlist_phq_job_status_list">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Job Status List</name>
+  <customvalues>
+    <customvalue scriptid="val_76051_t1697389_187">
+      <isinactive>F</isinactive>
+      <value>New</value>
+    </customvalue>
+    <customvalue scriptid="val_76052_t1697389_776">
+      <isinactive>F</isinactive>
+      <value>Queue</value>
+    </customvalue>
+    <customvalue scriptid="val_76053_t1697389_868">
+      <isinactive>F</isinactive>
+      <value>Approved</value>
+    </customvalue>
+    <customvalue scriptid="val_680503_t1697389_179">
+      <isinactive>F</isinactive>
+      <value>Appointment</value>
+    </customvalue>
+    <customvalue scriptid="val_680504_t1697389_328">
+      <isinactive>F</isinactive>
+      <value>Complete</value>
+    </customvalue>
+    <customvalue scriptid="val_680505_t1697389_238">
+      <isinactive>F</isinactive>
+      <value>Vendor</value>
+    </customvalue>
+    <customvalue scriptid="val_680506_t1697389_644">
+      <isinactive>F</isinactive>
+      <value>Bench</value>
+    </customvalue>
+    <customvalue scriptid="val_680507_t1697389_350">
+      <isinactive>F</isinactive>
+      <value>Hold</value>
+    </customvalue>
+    <customvalue scriptid="val_680508_t1697389_958">
+      <isinactive>F</isinactive>
+      <value>Estimate</value>
+    </customvalue>
+    <customvalue scriptid="val_680509_t1697389_850">
+      <isinactive>F</isinactive>
+      <value>Waiting for Parts</value>
+    </customvalue>
+    <customvalue scriptid="val_680510_t1697389_606">
+      <isinactive>F</isinactive>
+      <value>Waiting for CC Auth</value>
+    </customvalue>
+    <customvalue scriptid="val_680511_t1697389_130">
+      <isinactive>F</isinactive>
+      <value>Waiting for PO #</value>
+    </customvalue>
+  </customvalues>
+</customlist>

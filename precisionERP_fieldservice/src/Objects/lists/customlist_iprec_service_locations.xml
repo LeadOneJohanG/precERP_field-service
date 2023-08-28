@@ -1,0 +1,28 @@
+<customlist scriptid="customlist_iprec_service_locations">
+  <description>Locations which repair/service equipment.</description>
+  <isinactive>F</isinactive>
+  <isordered>F</isordered>
+  <name>Service Locations</name>
+  <customvalues>
+    <customvalue scriptid="val_61084_4328538_892">
+      <isinactive>F</isinactive>
+      <value>Ag Technologies</value>
+    </customvalue>
+    <customvalue scriptid="val_59980_4328538_383">
+      <isinactive>F</isinactive>
+      <value>Ag-Express</value>
+    </customvalue>
+    <customvalue scriptid="val_59430_t573085_138">
+      <isinactive>F</isinactive>
+      <value>Inhouse</value>
+    </customvalue>
+    <customvalue scriptid="val_59552_t573085_473">
+      <isinactive>F</isinactive>
+      <value>My Bench</value>
+    </customvalue>
+    <customvalue scriptid="val_59429_t573085_313">
+      <isinactive>F</isinactive>
+      <value>My Service Location</value>
+    </customvalue>
+  </customvalues>
+</customlist>

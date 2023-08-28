@@ -1,0 +1,24 @@
+<customlist scriptid="customlist_sitetype">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Site-Type</name>
+  <customvalues>
+    <customvalue scriptid="value_1_t573085_832">
+      <isinactive>F</isinactive>
+      <value>RTK Base Station</value>
+    </customvalue>
+    <customvalue scriptid="value_2_t573085_832">
+      <isinactive>F</isinactive>
+      <value>RTK Repeater Site</value>
+    </customvalue>
+    <customvalue scriptid="value_3_t573085_832">
+      <isinactive>F</isinactive>
+      <value>RTK Base - Aguplink</value>
+    </customvalue>
+    <customvalue scriptid="value_4_t573085_832">
+      <isinactive>F</isinactive>
+      <value>RTK Repeater - Aguplink</value>
+    </customvalue>
+  </customvalues>
+</customlist>

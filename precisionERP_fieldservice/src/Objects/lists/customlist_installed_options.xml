@@ -1,0 +1,28 @@
+<customlist scriptid="customlist_installed_options">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Installed Options</name>
+  <customvalues>
+    <customvalue scriptid="value_1_t573085_832">
+      <isinactive>F</isinactive>
+      <value>AutoPilot</value>
+    </customvalue>
+    <customvalue scriptid="value_2_t573085_832">
+      <isinactive>F</isinactive>
+      <value>FMX/DCM Only</value>
+    </customvalue>
+    <customvalue scriptid="value_3_t573085_832">
+      <isinactive>F</isinactive>
+      <value>DCM Only</value>
+    </customvalue>
+    <customvalue scriptid="value_4_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Field IQ/AP</value>
+    </customvalue>
+    <customvalue scriptid="value_5_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Field IQ</value>
+    </customvalue>
+  </customvalues>
+</customlist>

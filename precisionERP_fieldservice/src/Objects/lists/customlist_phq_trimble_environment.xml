@@ -1,0 +1,20 @@
+<customlist scriptid="customlist_phq_trimble_environment">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Trimble Environment</name>
+  <customvalues>
+    <customvalue scriptid="val_16562_t1805436_426">
+      <isinactive>F</isinactive>
+      <value>Development</value>
+    </customvalue>
+    <customvalue scriptid="val_16565_t1805436_245">
+      <isinactive>F</isinactive>
+      <value>QUAT</value>
+    </customvalue>
+    <customvalue scriptid="val_16563_t1805436_366">
+      <isinactive>F</isinactive>
+      <value>Production</value>
+    </customvalue>
+  </customvalues>
+</customlist>

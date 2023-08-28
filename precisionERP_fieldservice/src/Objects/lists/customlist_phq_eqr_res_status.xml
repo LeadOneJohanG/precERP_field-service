@@ -1,0 +1,36 @@
+<customlist scriptid="customlist_phq_eqr_res_status">
+  <description>List of reservation statuses</description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Rental Reservation Statuses</name>
+  <customvalues>
+    <customvalue scriptid="val_59530_t573085_264">
+      <isinactive>F</isinactive>
+      <value>Quoted</value>
+    </customvalue>
+    <customvalue scriptid="val_59531_t573085_382">
+      <isinactive>F</isinactive>
+      <value>Pending Review</value>
+    </customvalue>
+    <customvalue scriptid="val_59532_t573085_796">
+      <isinactive>F</isinactive>
+      <value>In Progress</value>
+    </customvalue>
+    <customvalue scriptid="val_59533_t573085_557">
+      <isinactive>F</isinactive>
+      <value>Complete</value>
+    </customvalue>
+    <customvalue scriptid="val_59534_t573085_576">
+      <isinactive>F</isinactive>
+      <value>Cancelled</value>
+    </customvalue>
+    <customvalue scriptid="val_59535_t573085_340">
+      <isinactive>F</isinactive>
+      <value>Terminated</value>
+    </customvalue>
+    <customvalue scriptid="val_59686_t573085_324">
+      <isinactive>F</isinactive>
+      <value>Escalation</value>
+    </customvalue>
+  </customvalues>
+</customlist>

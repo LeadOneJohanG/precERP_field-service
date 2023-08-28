@@ -1,0 +1,20 @@
+<customlist scriptid="customlist_wrm_termtype">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>WRM Term Type</name>
+  <customvalues>
+    <customvalue scriptid="value_1_3761970_349">
+      <isinactive>F</isinactive>
+      <value>Calculated</value>
+    </customvalue>
+    <customvalue scriptid="value_2_3761970_349">
+      <isinactive>F</isinactive>
+      <value>Fixed</value>
+    </customvalue>
+    <customvalue scriptid="value_3_3761970_349">
+      <isinactive>F</isinactive>
+      <value>Lifetime</value>
+    </customvalue>
+  </customvalues>
+</customlist>

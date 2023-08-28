@@ -1,0 +1,32 @@
+<customlist scriptid="customlist_application">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Application</name>
+  <customvalues>
+    <customvalue scriptid="value_1_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Harvester</value>
+    </customvalue>
+    <customvalue scriptid="value_2_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Cultivation</value>
+    </customvalue>
+    <customvalue scriptid="value_3_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Land Prep</value>
+    </customvalue>
+    <customvalue scriptid="value_4_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Sprayer</value>
+    </customvalue>
+    <customvalue scriptid="value_5_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Spread</value>
+    </customvalue>
+    <customvalue scriptid="value_6_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Plant</value>
+    </customvalue>
+  </customvalues>
+</customlist>

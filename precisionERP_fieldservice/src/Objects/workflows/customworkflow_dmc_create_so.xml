@@ -1,0 +1,170 @@
+<workflow scriptid="customworkflow_dmc_create_so">
+  <description></description>
+  <initcontexts></initcontexts>
+  <initeventtypes></initeventtypes>
+  <initlocalizationcontext></initlocalizationcontext>
+  <initoncreate>T</initoncreate>
+  <initonvieworupdate>T</initonvieworupdate>
+  <initsavedsearchcondition></initsavedsearchcondition>
+  <inittriggertype></inittriggertype>
+  <isinactive>F</isinactive>
+  <islogenabled>T</islogenabled>
+  <keephistory>ALWAYS</keephistory>
+  <name>Create Service Order</name>
+  <recordtypes>OPPORTUNITY</recordtypes>
+  <releasestatus>NOTINITIATING</releasestatus>
+  <runasadmin>F</runasadmin>
+  <initcondition>
+    <formula><![CDATA[isChecked("Create Service Order") = 'T']]></formula>
+    <type>VISUAL_BUILDER</type>
+    <parameters>
+      <parameter>
+        <name>Create Service Order</name>
+        <value>[scriptid=custbody_dmc_create_service_order]</value>
+      </parameter>
+    </parameters>
+  </initcondition>
+  <workflowcustomfields>
+    <workflowcustomfield scriptid="custworkflow_dmc_so_id">
+      <applyformatting>F</applyformatting>
+      <defaultchecked>F</defaultchecked>
+      <defaultselection></defaultselection>
+      <defaultvalue></defaultvalue>
+      <description></description>
+      <displaytype>NORMAL</displaytype>
+      <dynamicdefault></dynamicdefault>
+      <fieldtype>SELECT</fieldtype>
+      <help></help>
+      <label>Service Order ID</label>
+      <linktext></linktext>
+      <maxvalue></maxvalue>
+      <minvalue></minvalue>
+      <selectrecordtype>-30</selectrecordtype>
+      <storevalue>T</storevalue>
+      <customfieldfilters>
+        <customfieldfilter>
+          <fldcomparefield></fldcomparefield>
+          <fldfilter>STDBODYTRANTYPE</fldfilter>
+          <fldfilterchecked></fldfilterchecked>
+          <fldfiltercomparetype>EQ</fldfiltercomparetype>
+          <fldfilternotnull>F</fldfilternotnull>
+          <fldfilternull>F</fldfilternull>
+          <fldfiltersel>SALESORDER</fldfiltersel>
+          <fldfilterval></fldfilterval>
+        </customfieldfilter>
+      </customfieldfilters>
+    </workflowcustomfield>
+  </workflowcustomfields>
+  <workflowstates>
+    <workflowstate scriptid="workflowstate12307">
+      <description></description>
+      <donotexitworkflow>F</donotexitworkflow>
+      <name>State 1 - Create SO from Opportunity</name>
+      <positionx>243</positionx>
+      <positiony>133</positiony>
+      <workflowactions triggertype="AFTERSUBMIT">
+        <transformrecordaction scriptid="workflowaction69224">
+          <conditionsavedsearch></conditionsavedsearch>
+          <contexttypes></contexttypes>
+          <eventtypes></eventtypes>
+          <isinactive>F</isinactive>
+          <isredirectwithoutsaving>F</isredirectwithoutsaving>
+          <recordtype>SALESORDER</recordtype>
+          <resultfield>[scriptid=customworkflow_dmc_create_so.custworkflow_dmc_so_id]</resultfield>
+          <scheduledelay></scheduledelay>
+          <schedulemode>DELAY</schedulemode>
+          <schedulerecurrence></schedulerecurrence>
+          <scheduletimeofday></scheduletimeofday>
+          <scheduletimeunit></scheduletimeunit>
+          <initcondition>
+            <formula></formula>
+            <type>VISUAL_BUILDER</type>
+          </initcondition>
+          <fieldsettings>
+            <fieldsetting>
+              <targetfield>[scriptid=custbody_dmc_create_service_order]</targetfield>
+              <valuechecked>F</valuechecked>
+              <valuedate></valuedate>
+              <valuefield></valuefield>
+              <valueformula></valueformula>
+              <valuejoinfield></valuejoinfield>
+              <valueselect></valueselect>
+              <valuetext></valuetext>
+            </fieldsetting>
+          </fieldsettings>
+        </transformrecordaction>
+      </workflowactions>
+      <workflowtransitions>
+        <workflowtransition scriptid="workflowtransition13217">
+          <buttonaction></buttonaction>
+          <conditionsavedsearch></conditionsavedsearch>
+          <contexttypes></contexttypes>
+          <eventtypes></eventtypes>
+          <scheduledelay></scheduledelay>
+          <scheduletimeunit></scheduletimeunit>
+          <tostate>[scriptid=customworkflow_dmc_create_so.workflowstate12308]</tostate>
+          <triggertype></triggertype>
+          <waitforworkflow></waitforworkflow>
+          <waitforworkflowstate></waitforworkflowstate>
+          <initcondition>
+            <formula></formula>
+            <type>VISUAL_BUILDER</type>
+          </initcondition>
+        </workflowtransition>
+      </workflowtransitions>
+    </workflowstate>
+    <workflowstate scriptid="workflowstate12308">
+      <description></description>
+      <donotexitworkflow>F</donotexitworkflow>
+      <name>State 2 - Uncheck</name>
+      <positionx>253</positionx>
+      <positiony>263</positiony>
+      <workflowactions triggertype="ONENTRY">
+        <setfieldvalueaction scriptid="workflowaction69225">
+          <clienttriggerfields></clienttriggerfields>
+          <conditionsavedsearch></conditionsavedsearch>
+          <contexttypes></contexttypes>
+          <eventtypes></eventtypes>
+          <field>[scriptid=custbody_dmc_create_service_order]</field>
+          <isinactive>F</isinactive>
+          <scheduledelay></scheduledelay>
+          <schedulemode>DELAY</schedulemode>
+          <schedulerecurrence></schedulerecurrence>
+          <scheduletimeofday></scheduletimeofday>
+          <scheduletimeunit></scheduletimeunit>
+          <valuechecked>F</valuechecked>
+          <valuedate></valuedate>
+          <valuefield></valuefield>
+          <valueformula></valueformula>
+          <valuejoinfield></valuejoinfield>
+          <valueselect></valueselect>
+          <valuetext></valuetext>
+          <valuetype>STATIC</valuetype>
+          <initcondition>
+            <formula><![CDATA[isChecked("Create Service Order") = 'T' AND "Status" IN ("Transaction Status1") AND isEmpty("Workflow:Service Order ID") = 'F']]></formula>
+            <type>VISUAL_BUILDER</type>
+            <parameters>
+              <parameter>
+                <name>Create Service Order</name>
+                <value>[scriptid=custbody_dmc_create_service_order]</value>
+              </parameter>
+              <parameter>
+                <name>Status</name>
+                <value>STDBODYSTATUS</value>
+              </parameter>
+              <parameter>
+                <name>Transaction Status1</name>
+                <selectrecordtype>-164</selectrecordtype>
+                <value>138</value>
+              </parameter>
+              <parameter>
+                <name>Workflow:Service Order ID</name>
+                <value>[scriptid=customworkflow_dmc_create_so.custworkflow_dmc_so_id]</value>
+              </parameter>
+            </parameters>
+          </initcondition>
+        </setfieldvalueaction>
+      </workflowactions>
+    </workflowstate>
+  </workflowstates>
+</workflow>

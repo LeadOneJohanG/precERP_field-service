@@ -1,0 +1,9 @@
+<advancedpdftemplate scriptid="custtmpl_precerp_service_invoice" standard="STDTMPLEMPTY">
+  <description></description>
+  <displaysourcecode>T</displaysourcecode>
+  <isinactive>F</isinactive>
+  <preferred>F</preferred>
+  <printtype>TRANSACTION</printtype>
+  <title>PrecERP - Service Invoice</title>
+  <trantype>CUSTINVC</trantype>
+</advancedpdftemplate>

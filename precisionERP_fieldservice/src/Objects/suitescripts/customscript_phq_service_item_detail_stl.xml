@@ -1,0 +1,25 @@
+<suitelet scriptid="customscript_phq_service_item_detail_stl">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>Service Item Detail Suitelet</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>F</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteBundles/Bundle 458535/com.dmc.service_order/phq_service_item_detail_suitelet.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_dep_serv_item_detl_stl">
+      <allemployees>T</allemployees>
+      <allpartners>T</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>T</isonline>
+      <loglevel>DEBUG</loglevel>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>RELEASED</status>
+      <title>Service Item Detail Suitelet</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

@@ -1,0 +1,32 @@
+<customlist scriptid="customlist_phq_eqr_equip_status">
+  <description>Rental status list for equipment records.</description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Equipment Rental Statuses</name>
+  <customvalues>
+    <customvalue scriptid="val_59519_t573085_890">
+      <isinactive>F</isinactive>
+      <value>Available</value>
+    </customvalue>
+    <customvalue scriptid="val_59520_t573085_636">
+      <isinactive>F</isinactive>
+      <value>Rented</value>
+    </customvalue>
+    <customvalue scriptid="val_59521_t573085_372">
+      <isinactive>F</isinactive>
+      <value>Inspection</value>
+    </customvalue>
+    <customvalue scriptid="val_59522_t573085_546">
+      <isinactive>F</isinactive>
+      <value>Reserved</value>
+    </customvalue>
+    <customvalue scriptid="val_7524_2227241_644">
+      <isinactive>F</isinactive>
+      <value>Sold</value>
+    </customvalue>
+    <customvalue scriptid="val_7876_2227241_142">
+      <isinactive>F</isinactive>
+      <value>Off Rent</value>
+    </customvalue>
+  </customvalues>
+</customlist>

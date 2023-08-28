@@ -1,0 +1,155 @@
+<workflow scriptid="customworkflow_phq_create_job_card">
+  <description></description>
+  <initcontexts></initcontexts>
+  <initeventtypes>VIEW</initeventtypes>
+  <initlocalizationcontext></initlocalizationcontext>
+  <initoncreate>F</initoncreate>
+  <initonvieworupdate>T</initonvieworupdate>
+  <initsavedsearchcondition></initsavedsearchcondition>
+  <inittriggertype>BEFORELOAD</inittriggertype>
+  <isinactive>T</isinactive>
+  <islogenabled>F</islogenabled>
+  <keephistory>ALWAYS</keephistory>
+  <name>Create Job Card</name>
+  <recordtypes>OPPORTUNITY</recordtypes>
+  <releasestatus>RELEASED</releasestatus>
+  <runasadmin>T</runasadmin>
+  <initcondition>
+    <formula><![CDATA[isEmpty("Job Type") = 'F' AND "Status" IN ("Transaction Status1","Transaction Status2")]]></formula>
+    <type>VISUAL_BUILDER</type>
+    <parameters>
+      <parameter>
+        <name>Job Type</name>
+        <value>[scriptid=custbody_phq_job_type]</value>
+      </parameter>
+      <parameter>
+        <name>Status</name>
+        <value>STDBODYSTATUS</value>
+      </parameter>
+      <parameter>
+        <name>Transaction Status1</name>
+        <selectrecordtype>-164</selectrecordtype>
+        <value>136</value>
+      </parameter>
+      <parameter>
+        <name>Transaction Status2</name>
+        <selectrecordtype>-164</selectrecordtype>
+        <value>137</value>
+      </parameter>
+    </parameters>
+  </initcondition>
+  <workflowcustomfields>
+    <workflowcustomfield scriptid="custworkflow_phq_create_job_new_job">
+      <applyformatting>F</applyformatting>
+      <defaultchecked>F</defaultchecked>
+      <defaultselection></defaultselection>
+      <defaultvalue></defaultvalue>
+      <description></description>
+      <displaytype>NORMAL</displaytype>
+      <dynamicdefault></dynamicdefault>
+      <fieldtype>SELECT</fieldtype>
+      <help></help>
+      <label>New Job Card</label>
+      <linktext></linktext>
+      <maxvalue></maxvalue>
+      <minvalue></minvalue>
+      <selectrecordtype>-30</selectrecordtype>
+      <storevalue>T</storevalue>
+    </workflowcustomfield>
+  </workflowcustomfields>
+  <workflowstates>
+    <workflowstate scriptid="workflowstate12309">
+      <description></description>
+      <donotexitworkflow>F</donotexitworkflow>
+      <name>Create Button</name>
+      <positionx>243</positionx>
+      <positiony>133</positiony>
+      <workflowactions triggertype="BEFORELOAD">
+        <addbuttonaction scriptid="workflowaction_phq_create_job_s1">
+          <checkconditionbeforeexecution>T</checkconditionbeforeexecution>
+          <conditionsavedsearch></conditionsavedsearch>
+          <contexttypes></contexttypes>
+          <eventtypes>VIEW</eventtypes>
+          <isinactive>F</isinactive>
+          <label>Create Service Order</label>
+          <saverecordfirst>F</saverecordfirst>
+          <initcondition>
+            <formula></formula>
+            <type>VISUAL_BUILDER</type>
+          </initcondition>
+        </addbuttonaction>
+      </workflowactions>
+      <workflowtransitions>
+        <workflowtransition scriptid="workflowtransition13218">
+          <buttonaction>[scriptid=customworkflow_phq_create_job_card.workflowstate12309.workflowaction_phq_create_job_s1]</buttonaction>
+          <conditionsavedsearch></conditionsavedsearch>
+          <contexttypes></contexttypes>
+          <eventtypes></eventtypes>
+          <scheduledelay></scheduledelay>
+          <scheduletimeunit></scheduletimeunit>
+          <tostate>[scriptid=customworkflow_phq_create_job_card.workflowstate12310]</tostate>
+          <triggertype></triggertype>
+          <waitforworkflow></waitforworkflow>
+          <waitforworkflowstate></waitforworkflowstate>
+          <initcondition>
+            <formula></formula>
+            <type>VISUAL_BUILDER</type>
+          </initcondition>
+        </workflowtransition>
+      </workflowtransitions>
+    </workflowstate>
+    <workflowstate scriptid="workflowstate12310">
+      <description></description>
+      <donotexitworkflow>F</donotexitworkflow>
+      <name>Create Job Card</name>
+      <positionx>243</positionx>
+      <positiony>293</positiony>
+      <workflowactions triggertype="ONENTRY">
+        <transformrecordaction scriptid="workflowaction69226">
+          <conditionsavedsearch></conditionsavedsearch>
+          <contexttypes></contexttypes>
+          <eventtypes></eventtypes>
+          <isinactive>F</isinactive>
+          <isredirectwithoutsaving>F</isredirectwithoutsaving>
+          <recordtype>SALESORDER</recordtype>
+          <resultfield>[scriptid=customworkflow_phq_create_job_card.custworkflow_phq_create_job_new_job]</resultfield>
+          <scheduledelay></scheduledelay>
+          <schedulemode>DELAY</schedulemode>
+          <schedulerecurrence></schedulerecurrence>
+          <scheduletimeofday></scheduletimeofday>
+          <scheduletimeunit></scheduletimeunit>
+          <initcondition>
+            <formula></formula>
+            <type>VISUAL_BUILDER</type>
+          </initcondition>
+          <fieldsettings>
+            <fieldsetting>
+              <targetfield>[scriptid=custbody_phq_job_status]</targetfield>
+              <valuechecked></valuechecked>
+              <valuedate></valuedate>
+              <valuefield></valuefield>
+              <valueformula></valueformula>
+              <valuejoinfield></valuejoinfield>
+              <valueselect>[scriptid=customlist_phq_job_status_list.val_76052_t1697389_776]</valueselect>
+              <valuetext></valuetext>
+            </fieldsetting>
+          </fieldsettings>
+        </transformrecordaction>
+        <gotorecordaction scriptid="workflowaction69227">
+          <conditionsavedsearch></conditionsavedsearch>
+          <contexttypes></contexttypes>
+          <eventtypes></eventtypes>
+          <ineditmode>T</ineditmode>
+          <isinactive>F</isinactive>
+          <recordidfield>[scriptid=customworkflow_phq_create_job_card.custworkflow_phq_create_job_new_job]</recordidfield>
+          <recordidjoinfield></recordidjoinfield>
+          <recordtype>SALESORDER</recordtype>
+          <initcondition>
+            <formula></formula>
+            <type>VISUAL_BUILDER</type>
+          </initcondition>
+        </gotorecordaction>
+      </workflowactions>
+    </workflowstate>
+  </workflowstates>
+</workflow>

@@ -1,0 +1,32 @@
+<customlist scriptid="customlist_precerp_depr_list_status">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>PrecERP - Write Down Status</name>
+  <customvalues>
+    <customvalue scriptid="val_621258_t2359357_186">
+      <isinactive>F</isinactive>
+      <value>Not Initialized</value>
+    </customvalue>
+    <customvalue scriptid="val_621259_t2359357_402">
+      <isinactive>F</isinactive>
+      <value>Active</value>
+    </customvalue>
+    <customvalue scriptid="val_621260_t2359357_142">
+      <isinactive>F</isinactive>
+      <value>Pause</value>
+    </customvalue>
+    <customvalue scriptid="val_621261_t2359357_805">
+      <isinactive>F</isinactive>
+      <value>Complete</value>
+    </customvalue>
+    <customvalue scriptid="val_621262_t2359357_923">
+      <isinactive>F</isinactive>
+      <value>Pending Create it</value>
+    </customvalue>
+    <customvalue scriptid="val_621263_t2359357_968">
+      <isinactive>F</isinactive>
+      <value>Create it</value>
+    </customvalue>
+  </customvalues>
+</customlist>

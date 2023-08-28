@@ -1,0 +1,16 @@
+<customlist scriptid="customlist_power_source">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Power Source</name>
+  <customvalues>
+    <customvalue scriptid="value_1_t573085_832">
+      <isinactive>F</isinactive>
+      <value>110v</value>
+    </customvalue>
+    <customvalue scriptid="value_2_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Solar</value>
+    </customvalue>
+  </customvalues>
+</customlist>

@@ -1,0 +1,16 @@
+<customlist scriptid="customlist_cap_process_type">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Capitalization Process Type</name>
+  <customvalues>
+    <customvalue scriptid="val_57520_2227241_921">
+      <isinactive>F</isinactive>
+      <value>Capitalization</value>
+    </customvalue>
+    <customvalue scriptid="val_57521_2227241_696">
+      <isinactive>F</isinactive>
+      <value>Write Down</value>
+    </customvalue>
+  </customvalues>
+</customlist>

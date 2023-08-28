@@ -1,0 +1,9 @@
+<advancedpdftemplate scriptid="custtmpl_precerp_service_order" standard="STDTMPLEMPTY">
+  <description></description>
+  <displaysourcecode>T</displaysourcecode>
+  <isinactive>F</isinactive>
+  <preferred>F</preferred>
+  <printtype>TRANSACTION</printtype>
+  <title>PrecERP - Service Order</title>
+  <trantype>SALESORD</trantype>
+</advancedpdftemplate>

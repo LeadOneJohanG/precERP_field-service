@@ -1,0 +1,25 @@
+<suitelet scriptid="customscript_summary_checkin_form">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>Summary Check-in Form</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteBundles/Bundle 458535/Summary Check-in Form.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_deployment_1">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>DEBUG</loglevel>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>TESTING</status>
+      <title>Summary Check-in Form</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

@@ -1,0 +1,20 @@
+<customlist scriptid="customlist_ordertype">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Order Type</name>
+  <customvalues>
+    <customvalue scriptid="value_1_t1516497_962">
+      <isinactive>F</isinactive>
+      <value>Contract - New</value>
+    </customvalue>
+    <customvalue scriptid="value_2_t1516497_962">
+      <isinactive>F</isinactive>
+      <value>Contract - Upsell</value>
+    </customvalue>
+    <customvalue scriptid="value_3_t1516497_962">
+      <isinactive>F</isinactive>
+      <value>Contract - Downsell</value>
+    </customvalue>
+  </customvalues>
+</customlist>

@@ -1,0 +1,23 @@
+<sublist scriptid="custsublist_7_t1697389_315">
+  <assemblybuild>F</assemblybuild>
+  <customtransactions></customtransactions>
+  <deposit>F</deposit>
+  <depositapplication>F</depositapplication>
+  <expensereport>F</expensereport>
+  <field></field>
+  <fulfillmentrequest>F</fulfillmentrequest>
+  <inventoryadjustment>F</inventoryadjustment>
+  <itemfulfillment>F</itemfulfillment>
+  <itemreceipt>F</itemreceipt>
+  <journal>F</journal>
+  <label>Service Time Tracking</label>
+  <opportunity>F</opportunity>
+  <payment>F</payment>
+  <purchase>F</purchase>
+  <sale>T</sale>
+  <savedsearch>[scriptid=customsearch_phq_service_time_tracking]</savedsearch>
+  <storepickup>F</storepickup>
+  <sublisttype>TRANSACTION</sublisttype>
+  <tab>[scriptid=custtab_105_t1697389_621]</tab>
+  <vendorpayment>F</vendorpayment>
+</sublist>

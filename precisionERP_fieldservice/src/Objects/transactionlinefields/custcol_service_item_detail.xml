@@ -1,0 +1,56 @@
+<transactioncolumncustomfield scriptid="custcol_service_item_detail">
+  <accesslevel>2</accesslevel>
+  <applyformatting>F</applyformatting>
+  <colbuild>F</colbuild>
+  <colexpense>F</colexpense>
+  <colexpensereport>F</colexpensereport>
+  <colgrouponinvoices>F</colgrouponinvoices>
+  <colinventoryadjustment>F</colinventoryadjustment>
+  <colitemfulfillment>F</colitemfulfillment>
+  <colitemfulfillmentorder>F</colitemfulfillmentorder>
+  <colitemreceipt>F</colitemreceipt>
+  <colitemreceiptorder>F</colitemreceiptorder>
+  <coljournal>F</coljournal>
+  <colkititem>F</colkititem>
+  <colopportunity>F</colopportunity>
+  <colpackingslip>F</colpackingslip>
+  <colpickingticket>F</colpickingticket>
+  <colprintflag>F</colprintflag>
+  <colpurchase>F</colpurchase>
+  <colreturnform>F</colreturnform>
+  <colsale>F</colsale>
+  <colstore>F</colstore>
+  <colstorehidden>F</colstorehidden>
+  <colstorewithgroups>F</colstorewithgroups>
+  <coltime>F</coltime>
+  <coltransferorder>F</coltransferorder>
+  <columncustomtransactions></columncustomtransactions>
+  <defaultchecked>F</defaultchecked>
+  <defaultselection></defaultselection>
+  <defaultvalue>&apos;&lt;a href=&quot;https://2227241.extforms.netsuite.com/app/site/hosting/scriptlet.nl?script=139&amp;deploy=1&amp;compid=2227241&amp;h=d3cee1603ab4ce6242ad&quot; target=&quot;_blank&quot;&gt;&#xd;
+&lt;img id=&quot;img_service_item&quot; alt=&quot;&quot; src=&quot;https://2227241.app.netsuite.com/core/media/media.nl?id=381&amp;c=2227241&amp;h=QftcCuvZjIq0Z7WLsGoX4HABwYiBnq7YtwDbPUNJeYNO6-Ho&quot; width=35&quot; height=&quot;35&quot;&gt;&#xd;
+&lt;/a&gt;&apos;</defaultvalue>
+  <description></description>
+  <displayheight></displayheight>
+  <displaytype>NORMAL</displaytype>
+  <displaywidth></displaywidth>
+  <dynamicdefault></dynamicdefault>
+  <encryptatrest>F</encryptatrest>
+  <fieldtype>INLINEHTML</fieldtype>
+  <help></help>
+  <isformula>T</isformula>
+  <ismandatory>F</ismandatory>
+  <label>Service Item Detail</label>
+  <linktext></linktext>
+  <maxlength></maxlength>
+  <maxvalue></maxvalue>
+  <minvalue></minvalue>
+  <onparentdelete></onparentdelete>
+  <searchlevel>2</searchlevel>
+  <selectrecordtype></selectrecordtype>
+  <showhierarchy>F</showhierarchy>
+  <sourcefilterby></sourcefilterby>
+  <sourcefrom></sourcefrom>
+  <sourcelist></sourcelist>
+  <storevalue>F</storevalue>
+</transactioncolumncustomfield>

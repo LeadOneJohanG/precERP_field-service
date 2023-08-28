@@ -1,0 +1,28 @@
+<customlist scriptid="customlist_precerp_reason_reschedule">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Reason Reschedule</name>
+  <customvalues>
+    <customvalue scriptid="val_630870_t2359357_298">
+      <isinactive>F</isinactive>
+      <value>Reason 1</value>
+    </customvalue>
+    <customvalue scriptid="val_630871_t2359357_413">
+      <isinactive>F</isinactive>
+      <value>Reason 2</value>
+    </customvalue>
+    <customvalue scriptid="val_630872_t2359357_535">
+      <isinactive>F</isinactive>
+      <value>Reason 3</value>
+    </customvalue>
+    <customvalue scriptid="val_631924_t2359357_467">
+      <isinactive>F</isinactive>
+      <value>Direction Don&apos;t Found</value>
+    </customvalue>
+    <customvalue scriptid="val_632028_t2359357_935">
+      <isinactive>F</isinactive>
+      <value>The customer wasn&apos;t at home</value>
+    </customvalue>
+  </customvalues>
+</customlist>

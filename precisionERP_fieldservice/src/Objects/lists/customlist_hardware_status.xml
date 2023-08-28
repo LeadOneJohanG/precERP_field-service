@@ -1,0 +1,28 @@
+<customlist scriptid="customlist_hardware_status">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Hardware Status</name>
+  <customvalues>
+    <customvalue scriptid="value_1_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Active</value>
+    </customvalue>
+    <customvalue scriptid="value_2_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Disabled</value>
+    </customvalue>
+    <customvalue scriptid="value_3_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Destroyed</value>
+    </customvalue>
+    <customvalue scriptid="value_4_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Terminated</value>
+    </customvalue>
+    <customvalue scriptid="val_631770_t2359357_541">
+      <isinactive>F</isinactive>
+      <value>Included in Assembly</value>
+    </customvalue>
+  </customvalues>
+</customlist>

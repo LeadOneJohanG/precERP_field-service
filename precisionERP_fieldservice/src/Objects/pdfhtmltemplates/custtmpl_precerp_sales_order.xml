@@ -1,0 +1,9 @@
+<advancedpdftemplate scriptid="custtmpl_precerp_sales_order" standard="STDTMPLEMPTY">
+  <description></description>
+  <displaysourcecode>T</displaysourcecode>
+  <isinactive>F</isinactive>
+  <preferred>F</preferred>
+  <printtype>TRANSACTION</printtype>
+  <title>PrecERP - Sales Order</title>
+  <trantype>SALESORD</trantype>
+</advancedpdftemplate>

@@ -1,0 +1,324 @@
+<?xml version="1.0"?><!DOCTYPE pdf PUBLIC "-//big.faceless.org//report" "report-1.1.dtd">
+<pdf>
+	<head>
+		<#if .locale == "ru_RU">
+			<link name="verdana" type="font" subtype="opentype" src="${nsfont.verdana}" src-bold="${nsfont.verdana_bold}" bytes="2" />
+		</#if>
+		<macrolist>
+			<macro id="nlheader">
+				<table class="header" style="width: 100%;">
+					<tr>
+						<td>
+							<#if companyInformation.logoUrl?length != 0>
+								<img src="${companyInformation.logoUrl}" style="margin: 7px; width:210px; height:60px;" />
+							</#if>
+							<p>
+								<span class="nameandaddress">${companyInformation.mainaddress_text}</span>
+							</p>
+						</td>
+						<td>&nbsp;</td>
+						<td align="right">
+							<span class="title">${record@title}</span>
+							<table>
+								<tr>
+									<td align="center" class="with_border" style="width: 95px;height:25px">Date</td>
+									<td align="center" class="border-up-down-right" style="width: 115px">${record@title} #</td>
+									<td align="center" class="border-up-down-right" style="width: 75px">Client #</td>
+								</tr>
+								<tr>
+									<td align="center" class="border-down-right-left" style="height:25px">${record.trandate}</td>
+									<td align="center" class="border-down-right">${record.tranid}</td>
+									<td align="center" class="border-down-right">${record.entity.entitynumber?round}</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</macro>
+			<macro id="nlfooter">
+				<table style="width: 100%; font-size: 8pt;">
+					<tr>
+						<td colspan="2">
+							<hr class="for_signature"/>
+							<p align="center">Signature</p>
+							<br/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<barcode codetype="code128" showtext="true" value="${record.tranid}"/>
+						</td>
+						<td align="right">
+							<pagenumber/>of <totalpages/>
+						</td>
+					</tr>
+				</table>
+			</macro>
+		</macrolist>
+		<style type="text/css">
+			table {
+				<#if .locale=="zh_CN">
+					font-family: stsong, sans-serif;
+				<#elseif .locale=="zh_TW">
+					font-family: msung, sans-serif;
+				<#elseif .locale=="ja_JP">
+					font-family: heiseimin, sans-serif;
+				<#elseif .locale=="ko_KR">
+					font-family: hygothic, sans-serif;
+				<#elseif .locale=="ru_RU">
+					font-family: verdana;
+				<#else>font-family: sans-serif;
+				</#if>
+					font-size: 9pt;
+					table-layout: fixed;
+			}
+			th {
+				font-weight: bold;
+				font-size: 8pt;
+				vertical-align: middle;
+				padding: 5px 6px 3px;
+				background-color: #e3e3e3;
+				color: #333333;
+			}
+
+			td {
+				padding: 4px 6px;
+				min-height: 25px;
+			}
+
+			b {
+				font-weight: bold;
+				color: #333333;
+			}
+
+			table.header td {
+				padding: 0px;
+				font-size: 10pt;
+			}
+
+			table.footer td {
+				padding: 0px;
+				font-size: 8pt;
+			}
+
+			table.itemtable th {
+				padding-bottom: 10px;
+				padding-top: 10px;
+			}
+
+			table.body td {
+				padding-top: 2px;
+			}
+
+			table.total {
+				page-break-inside: avoid;
+			}
+
+			tr.totalrow {
+				background-color: #e3e3e3;
+				line-height: 200%;
+			}
+
+			td.totalboxtop {
+				font-size: 12pt;
+				background-color: #e3e3e3;
+			}
+
+			td.addressheader {
+				font-size: 8pt;
+				padding-top: 6px;
+				padding-bottom: 2px;
+			}
+
+			td.address {
+				padding-top: 0px;
+			}
+
+			td.totalboxmid {
+				font-size: 28pt;
+				padding-top: 20px;
+				background-color: #e3e3e3;
+			}
+
+			td.totalboxbot {
+				background-color: #e3e3e3;
+				font-weight: bold;
+			}
+
+			td.with_border {
+				border-width: 1px;
+				border-color: #666666;
+			}
+			.border-right-left {
+				border-right: solid 2px;
+				border-left: solid 2px;
+				border-color: #666666;
+			}
+			.border-up-down-right {
+				border-top: solid 2px;
+				border-right: solid 2px;
+				border-bottom: solid 2px;
+				border-color: #666666;
+			}
+			.border-down-right {
+				border-bottom: solid 2px;
+				border-right: solid 2px;
+				border-color: #666666;
+			}
+			.border-down-right-left {
+				border-bottom: solid 2px;
+				border-right: solid 2px;
+				border-left: solid 2px;
+				border-color: #666666;
+			}
+			span.title {
+				font-size: 28pt;
+			}
+			span.number {
+				font-size: 16pt;
+			}
+			span.itemname {
+				font-weight: bold;
+				line-height: 150%;
+			}
+			hr {
+				width: 100%;
+				color: #d3d3d3;
+				background-color: #d3d3d3;
+				height: 1px;
+			}
+			hr.for_signature {
+				margin-top: 0.5em;
+				margin-bottom: 0.0em;
+				margin-left: auto;
+				margin-right: auto;
+				border-style: inset;
+				background-color: #000;
+				width: 50% !important;
+			}
+			table.border td,
+			table.border th {
+				border-right: solid 2px;
+				border-bottom: solid 2px;
+				border-color: #666666;
+			}
+			table.border th:last-child,
+			table.border td:last-child {
+				border-right: none;
+			}
+			table.border tr:last-child>td {
+				border-bottom: none;
+			}
+			table.striped tbody tr:nth-child(odd) {
+				background-color: #CCCCCC;
+			}
+			table.striped tbody tr:nth-child(even) {
+				background-color: #FFFFFF;
+			}
+			tbody.details{
+				min-height: 250px;
+			}
+			table .addresses td { 
+				font-size: 9px; width: 350px; 
+			}
+		</style>
+		<script>var w=window;if(w.performance||w.mozPerformance||w.msPerformance||w.webkitPerformance){var d=document;AKSB=w.AKSB||{},AKSB.q=AKSB.q||[],AKSB.mark=AKSB.mark||function(e,_){AKSB.q.push(["mark",e,_||(new Date).getTime()])},AKSB.measure=AKSB.measure||function(e,_,t){AKSB.q.push(["measure",e,_,t||(new Date).getTime()])},AKSB.done=AKSB.done||function(e){AKSB.q.push(["done",e])},AKSB.mark("firstbyte",(new Date).getTime()),AKSB.prof={custid:"590700",ustr:"",originlat:"0",clientrtt:"20",ghostip:"66.210.41.152",ipv6:false,pct:"10",clientip:"68.230.44.18",requestid:"8f080f",region:"22765",protocol:"h2",blver:13,akM:"x",akN:"ae",akTT:"O",akTX:"1",akTI:"8f080f",ai:"384610",ra:"false",pmgn:"",pmgi:"",pmp:"",qc:""},function(e){var _=d.createElement("script");_.async="async",_.src=e;var t=d.getElementsByTagName("script"),t=t[t.length-1];t.parentNode.insertBefore(_,t)}(("https:"===d.location.protocol?"https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js")}</script>
+		<script>var w=window;if(w.performance||w.mozPerformance||w.msPerformance||w.webkitPerformance){var d=document;AKSB=w.AKSB||{},AKSB.q=AKSB.q||[],AKSB.mark=AKSB.mark||function(e,_){AKSB.q.push(["mark",e,_||(new Date).getTime()])},AKSB.measure=AKSB.measure||function(e,_,t){AKSB.q.push(["measure",e,_,t||(new Date).getTime()])},AKSB.done=AKSB.done||function(e){AKSB.q.push(["done",e])},AKSB.mark("firstbyte",(new Date).getTime()),AKSB.prof={custid:"590700",ustr:"",originlat:"0",clientrtt:"41",ghostip:"201.148.67.13",ipv6:false,pct:"10",clientip:"187.254.31.232",requestid:"27e9919",region:"31656",protocol:"h2",blver:13,akM:"x",akN:"ae",akTT:"O",akTX:"1",akTI:"27e9919",ai:"384610",ra:"false",pmgn:"",pmgi:"",pmp:"",qc:""},function(e){var _=d.createElement("script");_.async="async",_.src=e;var t=d.getElementsByTagName("script"),t=t[t.length-1];t.parentNode.insertBefore(_,t)}(("https:"===d.location.protocol?"https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js")}</script>
+		<script>var w=window;if(w.performance||w.mozPerformance||w.msPerformance||w.webkitPerformance){var d=document;AKSB=w.AKSB||{},AKSB.q=AKSB.q||[],AKSB.mark=AKSB.mark||function(e,_){AKSB.q.push(["mark",e,_||(new Date).getTime()])},AKSB.measure=AKSB.measure||function(e,_,t){AKSB.q.push(["measure",e,_,t||(new Date).getTime()])},AKSB.done=AKSB.done||function(e){AKSB.q.push(["done",e])},AKSB.mark("firstbyte",(new Date).getTime()),AKSB.prof={custid:"590700",ustr:"",originlat:"0",clientrtt:"42",ghostip:"201.148.67.13",ipv6:false,pct:"10",clientip:"187.254.31.232",requestid:"cd8f0b7",region:"31656",protocol:"h2",blver:13,akM:"x",akN:"ae",akTT:"O",akTX:"1",akTI:"cd8f0b7",ai:"384610",ra:"false",pmgn:"",pmgi:"",pmp:"",qc:""},function(e){var _=d.createElement("script");_.async="async",_.src=e;var t=d.getElementsByTagName("script"),t=t[t.length-1];t.parentNode.insertBefore(_,t)}(("https:"===d.location.protocol?"https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js")}</script>
+	</head>
+	<body header="nlheader" header-height="130pt" footer="nlfooter" footer-height="51pt" padding="0.5in 0.5in 0.5in 0.5in" size="Letter">
+		<table style="width: 100%; margin-top: 10px;">
+			<tr>
+				<td class="addressheader with_border" colspan="3">
+					<b>${record.billaddress@label}</b>
+				</td>
+				<td>&nbsp;</td>
+				<td class="addressheader with_border" colspan="3">
+					<b>${record.shipaddress@label}</b>
+				</td>
+			</tr>
+			<tr>
+				<td class="address border-down-right-left" colspan="3" rowspan="2">${record.billaddress}</td>
+				<td>&nbsp;</td>
+				<td class="address border-down-right-left" colspan="3" rowspan="2">${record.shipaddress}</td>
+			</tr>
+		</table>
+		<table border="1" class="border" style="width: 100%; margin-top: 10px;border-color: #666666;border-bottom:none">
+			<tr>
+				<th>P.O. Number</th>
+				<th>Terms</th>
+				<th>Ship Method</th>
+				<th>Rep/Team</th>
+				<th>Memo</th>
+			</tr>
+			<tr>
+				<td>${record.otherrefnum}</td>
+				<td>${record.terms}</td>
+				<td>${record.shipmethod}</td>
+				<td>${record.salesrep}</td>
+				<td>${record.memo}</td>
+			</tr>
+		</table>
+		<#if record.item?has_content>
+			<table border="1" class="border striped" style="width: 100%;border-color: #666666;">
+				<!-- start items -->
+				<#list record.item as item>
+					<#if item_index==0>
+						<thead>
+							<tr>
+								<th align="center" style="width: 35px">Qty</th>
+								<th align="center" style="width: 100px">Item Code</th>
+								<th align="center">Description</th>
+								<th align="center">Serial Number(s)</th>
+								<th align="center" style="width: 90px">Price Each</th>
+								<th align="center" style="width: 90px">Amount</th>
+							</tr>
+						</thead>
+					</#if>
+					<tr>
+						<td align="right">${item.quantity}</td>
+						<td align="left">${item.item}</td>
+						<td align="left">${item.description?trim} </td>
+						<#if item.itemtype =="Kit">
+							<td align="left"></td>
+						<#else>
+							<td align="left">${item.serializedItem} ${item.inventorydetail}</td>
+						</#if>
+						<td align="right">${item.rate}</td>
+						<td align="right">${item.amount}</td>
+					</tr>
+				</#list>
+				<!-- end items -->
+			</table>
+		</#if>
+		<table style="page-break-inside: avoid; width: 100%; margin-top: 10px;">
+			<tr>
+				<td colspan="4">&nbsp;</td>
+				<td align="right" style="font-weight: bold; color: #333333;">${record.subtotal@label}</td>
+				<td align="right">${record.subtotal}</td>
+			</tr>
+			<#if (record.discounttotal != 0) >
+				<tr>
+					<td colspan="4">&nbsp;</td>
+					<td align="right" style="font-weight: bold; color: #333333;">${record.discounttotal@label}</td>
+					<td align="right">${record.discounttotal?string.currency} </td>
+				</tr>
+			</#if>
+			<tr>
+				<td colspan="4">&nbsp;</td>
+				<td align="right" style="font-weight: bold; color: #333333;">${record.taxtotal@label} </td>
+				<td align="right">${record.taxtotal}</td>
+			</tr>
+			<tr>
+				<td colspan="4">&nbsp;</td>
+				<td align="right" style="font-weight: bold; color: #333333;">${record.shippingcost@label}</td>
+				<td align="right">${record.shippingcost}</td>
+			</tr>
+			<tr style="background-color: #e3e3e3; line-height: 200%;">
+				<td background-color="#ffffff" colspan="4">&nbsp;</td>
+				<td align="right" style="font-weight: bold; color: #333333;">${record.total@label}</td>
+				<td align="right">${record.total}</td>
+			</tr>
+		</table>
+	</body>
+</pdf>

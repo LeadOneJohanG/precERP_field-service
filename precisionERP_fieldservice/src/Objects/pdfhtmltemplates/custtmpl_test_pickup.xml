@@ -1,0 +1,10 @@
+<advancedpdftemplate scriptid="custtmpl_test_pickup" standard="STDTMPLCR_PHQ_EQR_PICKUP">
+  <description></description>
+  <displaysourcecode>T</displaysourcecode>
+  <isinactive>F</isinactive>
+  <preferred>T</preferred>
+  <printtype>CUSTOMRECORD</printtype>
+  <recordtype>[scriptid=customrecord_phq_eqr_pickup]</recordtype>
+  <title>test_pickup</title>
+  <trantype>CUSTOM</trantype>
+</advancedpdftemplate>

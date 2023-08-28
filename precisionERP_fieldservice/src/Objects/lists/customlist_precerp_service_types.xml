@@ -1,0 +1,32 @@
+<customlist scriptid="customlist_precerp_service_types">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Service Order Type</name>
+  <customvalues>
+    <customvalue scriptid="val_73588_4952353_521">
+      <isinactive>F</isinactive>
+      <value>Bench Service</value>
+    </customvalue>
+    <customvalue scriptid="val_74152_4952353_177">
+      <isinactive>F</isinactive>
+      <value>Field Service</value>
+    </customvalue>
+    <customvalue scriptid="val_73589_4952353_621">
+      <isinactive>F</isinactive>
+      <value>Installation</value>
+    </customvalue>
+    <customvalue scriptid="val_73590_4952353_884">
+      <isinactive>F</isinactive>
+      <value>Service Re-Work</value>
+    </customvalue>
+    <customvalue scriptid="val_179081_4952353_614">
+      <isinactive>F</isinactive>
+      <value>Mining</value>
+    </customvalue>
+    <customvalue scriptid="val_892778_4952353_492">
+      <isinactive>F</isinactive>
+      <value>STOLEN EQUIPMENT</value>
+    </customvalue>
+  </customvalues>
+</customlist>

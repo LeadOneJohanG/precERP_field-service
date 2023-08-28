@@ -1,0 +1,25 @@
+<suitelet scriptid="customscript_phq_print_svc_checkin_sl">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>Print Service Check-In SL</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteBundles/Bundle 458535/Opportunity/eth_opp_print_sl.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_phq_print_svc_checkin_sl_1">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>DEBUG</loglevel>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>RELEASED</status>
+      <title>Print Service Check-In SL</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

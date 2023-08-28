@@ -1,0 +1,40 @@
+<customlist scriptid="customlist_orderstatus">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Order Status</name>
+  <customvalues>
+    <customvalue scriptid="value_6_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Processing</value>
+    </customvalue>
+    <customvalue scriptid="value_1_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Awaiting Parts</value>
+    </customvalue>
+    <customvalue scriptid="value_2_t573085_832">
+      <isinactive>F</isinactive>
+      <value>All Parts Here</value>
+    </customvalue>
+    <customvalue scriptid="value_3_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Install Scheduled</value>
+    </customvalue>
+    <customvalue scriptid="value_4_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Billable</value>
+    </customvalue>
+    <customvalue scriptid="value_5_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Repair/Service</value>
+    </customvalue>
+    <customvalue scriptid="value_7_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Drop Shipped to Grower</value>
+    </customvalue>
+    <customvalue scriptid="value_8_t573085_832">
+      <isinactive>F</isinactive>
+      <value>Memorized Transactions</value>
+    </customvalue>
+  </customvalues>
+</customlist>

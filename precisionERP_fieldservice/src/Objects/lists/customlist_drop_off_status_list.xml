@@ -1,0 +1,24 @@
+<customlist scriptid="customlist_drop_off_status_list">
+  <description></description>
+  <isinactive>F</isinactive>
+  <isordered>T</isordered>
+  <name>Drop Off Status List</name>
+  <customvalues>
+    <customvalue scriptid="val_409054_t2359357_558">
+      <isinactive>F</isinactive>
+      <value>Scheduled</value>
+    </customvalue>
+    <customvalue scriptid="val_409055_t2359357_261">
+      <isinactive>F</isinactive>
+      <value>In Progress</value>
+    </customvalue>
+    <customvalue scriptid="val_409056_t2359357_288">
+      <isinactive>F</isinactive>
+      <value>Completed</value>
+    </customvalue>
+    <customvalue scriptid="val_622054_t2359357_708">
+      <isinactive>F</isinactive>
+      <value>To Be Rescheduled</value>
+    </customvalue>
+  </customvalues>
+</customlist>
